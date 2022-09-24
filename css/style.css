@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --purpul-500:#3b49df;
+    --purpul-100:#3a47df1a;
+    --gray-900:#242424;
+    --gray-700:#575757;
+    --gray-500:#9f9f9f;
+    --gray-300:#f5f5f5;
+    --white:#ffffff;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+img{
+    width: 100%;
+}
+a{
+    text-decoration: none;
+}
+button{
+    display: block;
+}
+ul,ol{
+   list-style: none;
+}
+button,a,input{
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    background-color: var(--gray-300);
+}
+.container{
+    max-width: 1320px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.align-self-center{
+    align-self: center;
+}
+.justify-content-between{
+    justify-content: space-between;
+}
+.grid{
+    display: grid;
+    height: 100vh;
+    grid-template-rows: auto  1fr auto auto  auto ;
+    gap: 20px;
+}
+.border{
+    border: 2px solid crimson;
+}
+.margin-b-20{
+    margin-bottom: 20px;
+}
+.paddingtop-20{
+    padding-top: 20px;
+}
+.padding-20{
+    padding: 20px;
+}
+.overflow-hidden{
+    overflow: hidden;
+}
+.mx-auto{
+    margin: 0  auto;
+}
+section{
+    grid-row: 2/3;
+}
+
+.logo img{
+    width: 50px;
+}
+.border-bg{
+    background-color: var(--white);
+    box-shadow: 0px 0px 1px #9f9f9f;
+    border-radius: 5px;
+}
+.border-bg-top{
+    background-color: var(--white);
+    border-top: 1px solid var(--gray-300);
+    border-bottom: 1px solid var(--gray-300);
+    transition: all 0.5s;
+}
+.light-btn{
+    background-color: transparent;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    color: var(--gray-700-500);
+    font-size: 16px;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.light-btn:hover{
+    background-color: var(--purpul-100);
+    text-decoration: underline;
+    color: var(--purpul-500);
+}
+.dark-btn{
+    background-color: transparent;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    color: var(--purpul-500);
+    font-size: 16px;
+    text-transform: capitalize;
+    cursor: pointer;
+    border: 1px solid var(--purpul-500);
+    font-weight: 600;
+    transition: all 0.5s;
+}
+.dark-btn:hover{
+    background-color: var(--purpul-500);
+    text-decoration: underline;
+    color: var(--white);
+}
+
+/* HEADER CSS  */
+
+header {
+    padding: 10px 0;
+    background-color: var(--white);
+    box-shadow: 0px 1px 1px #9f9f9f33;
+}
+.login{
+    margin-right: 20px;
+}
+header .left .input-group input{
+    width:calc(100% + 200px);
+    padding: 10px;
+    border: 1px solid var(--gray-500);
+    border-radius: 5px;
+    outline-color: var(--purpul-500);
+    margin-left: 12px;
+    position: relative;
+}
+header .left .input-group input::after{
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+header .left .input-group input::placeholder{
+    color: var(--gray-700);
+    font-weight: 500;
+    font-size: 14px;
+}
+
+/* ASIDE CSS  */
+aside h1{
+    font-size: 20px;
+}
+aside h1 a{
+    color: var(--purpul-500);
+}
+aside h1 a:hover{
+    text-decoration:underline;
+}
+aside p{
+    font-size: 14px;
+    padding: 20px 0;
+}
+aside .account{
+    margin-bottom: 20px;
+}
+aside .cast span{
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+aside .cast span a{
+    padding-left: 10px;
+    color: var(--gray-900);
+}
+aside .cast span:hover{
+    background-color: var(--purpul-100);
+}
+aside .cast span:hover a{
+    text-decoration: underline;
+    color: var(--purpul-500);
+}
+aside .other h3{
+    font-size: 16px;
+}
+aside .other .other-icon i{
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: transparent;
+    line-height: 30px;
+    text-align: center;
+    transition: all 0.5s;
+    color: var(--gray-700);
+    cursor: pointer;
+}
+aside .other .other-icon i:hover{
+    background-color: var(--purpul-100);
+    color:var(--purpul-500);
+}
+aside .popular{
+    height: 500px;
+    overflow: auto;
+}
+aside .popular span{
+    font-size: 14px;
+    margin: 0;
+}
+.other
+/* SECTION CSS  */
+.user-box{
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    box-shadow: 0px 0px 3px #9f9f9f;
+    margin-right: 10px;
+}
+.user-info .user-name{
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--gray-900);
+}
+.user-info .user-time{
+    font-size: 12px;
+}
+.user-comment-box{
+    padding-left: 45px;
+    padding-top: 20px;
+}
+.user-comment-box .user-comment{
+    color: var(--gray-900);
+    font-size: 24px;
+    transition: all 0.5s;
+}
+.user-comment-box .user-comment:hover{
+    color: var(--purpul-500);
+}
+.user-comment-box .user-hashtag a
+{
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-size: 12px;
+    border: 1px solid transparent;
+    color: var(--gray-900);
+    transition: all 0.5s;
+    margin-right: 10px;
+}
+.user-hashtag a:hover{
+    background-color: var(--purpul-100);
+    border-color: var(--purpul-500);
+}
+.user-comment-box .user-hashtag a span{
+    color: var(--purpul-500);
+}
+.user-comment-box .user-reaction {
+    margin-top: 10px;
+}
+.user-comment-box .user-reaction button{
+    padding: 8px 10px;
+    margin-right: 10px;
+    background-color: transparent;
+    border: none;
+    transition: all 0.5s;
+    cursor: pointer;
+    font-weight: 400;
+    border-radius: 5px;
+}
+.user-comment-box .user-reaction button:hover{
+    background-color: var(--gray-300);
+}
+.user-comment-box .user-save{
+    margin-left: auto;
+    font-size: 14px;
+}
+.user-comment-box .user-save i{
+    padding-left: 20px;
+    font-size: 16px;
+    padding: 10px;
+}
+
+/* ARTICLE CSS */
+
+.listing h2{
+    font-size: 16px;
+}
+.listing p{
+    font-size: 12px;
+    font-weight: 800;
+    color: var(--purpul-500);
+}
+.listing h3{
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.5s;
+    color: var(--gray-900);
+}
+.listing label{
+    font-size: 12px;
+    color: var(--gray-500);
+}
+article .border-bg-top:hover{
+    background-color: var(--gray-300);
+}
+article .border-bg-top:hover h3{
+    color: var(--purpul-500);
+}
+article h5{
+    text-align: center;
+    font-size: 12px;
+    color: var(--gray-900);
+    font-weight: 600;
+}
+
+
+/* NAV CSS  */
+nav a{
+    color: var(--gray-900);
+    padding: 8px 20px;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+nav a.active{
+    font-weight: 700;
+}
+nav a:hover{
+    color: var(--purpul-500);
+    background-color: var(--white);
+}
